@@ -81,9 +81,7 @@ Clone this repository to your desired folder:
 To run the project, execute the following command:
 
 ```sh
-  Open index.html in browser
-  or
-  open with Live server in Vscode
+  npm start
 ```
 
 ### Run tests
@@ -100,7 +98,7 @@ To run tests, run the following commands:
 
 ## 👥 Author <a name="authors"></a>
 
-👤 **Charles Andrews**
+👤 **Hiwot Bayissa**
 
 - GitHub: [@githubhandle](https://github.com/hiwina)
 
@@ -116,7 +114,7 @@ To run tests, run the following commands:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/hiwina/book-store/issues).
+Feel free to check the [issues page](https://github.com/hiwina/bookstore/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
