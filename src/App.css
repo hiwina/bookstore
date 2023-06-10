@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+}
+
+.navbar,
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 5px;
+}
+
+button {
+  margin-left: 5px;
+}
+
+.navLinks {
+  display: flex;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.links {
+  margin-right: 10px;
+}
