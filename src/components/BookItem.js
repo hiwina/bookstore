@@ -1,13 +1,10 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const BookItem = ({ title, author }) => (
   <div>
     <li>
-      <h3>
-        {title}
-        ,
-      </h3>
+      <h3>{title}</h3>
       <span>
         {author}
       </span>
@@ -15,5 +12,15 @@ const BookItem = ({ title, author }) => (
     </li>
   </div>
 );
+
+BookItem.propTypes = {
+  title: PropTypes.string,
+  author: PropTypes.string,
+};
+
+BookItem.defaultProps = {
+  title: '',
+  author: '',
+};
 
 export default BookItem;
