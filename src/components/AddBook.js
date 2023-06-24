@@ -23,15 +23,32 @@ const AddBook = () => {
     });
   };
   return (
-    <>
-      <h2>Add new book</h2>
-      <form onSubmit={addNewBook}>
-        <input type="text" placeholder="Enter Book Title" name="title" value={book.title} onChange={handleChange} />
-        <input type="text" placeholder="Enter Book Author" name="author" value={book.author} onChange={handleChange} />
-        <input type="text" placeholder="Enter Book Category" name="category" value={book.category} onChange={handleChange} />
-        <button type="submit">Add</button>
+    <div className="hr">
+      <h3 className="add-book">Add a new book:</h3>
+      <form onSubmit={addNewBook} className="container-center">
+        <div>
+          <input type="text" placeholder="Enter Book Title" name="title" value={book.title} onChange={handleChange} className="input-control" />
+        </div>
+        <div>
+          <input type="text" placeholder="Enter Book Author" name="author" value={book.author} onChange={handleChange} className="input-control" />
+        </div>
+        <div>
+          <select
+            className="select"
+            name="category"
+            value={book.category}
+            onChange={handleChange}
+          >
+            <option value="action">Action</option>
+            <option value="science fiction">Science Fiction</option>
+            <option value="economy">Economy</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit" className="btn">Add Book</button>
+        </div>
       </form>
-    </>
+    </div>
   );
 };
 
