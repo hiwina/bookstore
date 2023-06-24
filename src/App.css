@@ -104,9 +104,6 @@ a:active {
 .book {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-
-  /* display: flex;
-  justify-content: space-between; */
   gap: 5px;
   width: 70rem;
   height: 10.625rem;
