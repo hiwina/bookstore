@@ -10,15 +10,13 @@ import Categories from './components/Categories';
 
 const App = () => (
   <>
-    <div className="books-container">
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Books />} />
-          <Route path="/Categories" element={<Categories />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="/Categories" element={<Categories />} />
+      </Routes>
+    </BrowserRouter>
   </>
 );
 

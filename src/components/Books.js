@@ -37,7 +37,6 @@ const Books = () => {
       <p>{delStatus.loading ? 'Deleting...' : ''}</p>
       <pre>{postStatus.error ? postStatus.errMsg : ''}</pre>
       <pre>{delStatus.error ? delStatus.errMsg : ''}</pre>
-      <h3>List of books:</h3>
       <ul>
         {bookItems.map((book) => (
           <BookItem key={book.id} id={book.id} book={book} />
