@@ -20,13 +20,16 @@ const BookItem = (prop) => {
           <span>
             {author}
           </span>
-          <div>
+          <div className="line">
             <button type="button" onClick={() => { }} className="btn-single">
               Comment
             </button>
+            <div className="Line-2" />
+
             <button type="button" onClick={handleDelete} className="btn-single">
               Remove
             </button>
+            <div className="Line-2" />
 
             <button type="button" onClick={() => { }} className="btn-single">
               Edit
