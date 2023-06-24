@@ -1,12 +1,12 @@
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { delBook } from '../redux/books/booksSlice';
 
 const BookItem = (prop) => {
   const dispatch = useDispatch();
-  const { book: { author, title }, id } = prop;
+  const { book: { author, title, category }, id } = prop;
 
   const handleDelete = () => {
-    dispatch(removeBook({ id }));
+    dispatch(delBook(id));
   };
   return (
     <div>
@@ -15,7 +15,11 @@ const BookItem = (prop) => {
         <span>
           {author}
         </span>
-        <button type="button" onClick={handleDelete}>Delete</button>
+        <p>{category}</p>
+        <button type="button" onClick={handleDelete}>
+          Delete
+
+        </button>
       </li>
     </div>
   );
