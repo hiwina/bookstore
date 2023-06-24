@@ -123,7 +123,6 @@ a:active {
   color: var(--dark-gray);
   font-size: 1rem;
   font-weight: bold;
-
 }
 
 li {
@@ -182,6 +181,7 @@ span {
 .line {
   display: flex;
 }
+
 .chapter-details {
   flex-direction: column;
   border-left: 2px solid var(--gray);
@@ -264,8 +264,9 @@ span {
   gap: 30px;
   justify-content: space-between;
 }
+
 .menu-list {
-  gap:50px;
+  gap: 50px;
 }
 
 .d-flex {
