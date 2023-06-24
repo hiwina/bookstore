@@ -16,8 +16,9 @@ body {
   overflow-x: hidden;
   background-color: var(--gray);
 }
+
 .books-container {
- width: 100rem;
+  width: 100rem;
   height: 89.625rem;
   padding: 9.313rem 3.75rem 7.688rem 6.25rem;
   background-color: var(--pale-grey);
@@ -35,17 +36,15 @@ header {
 }
 
 nav {
+  height: 5.938rem;
   padding: 20px 0;
 }
 
-nav {
-  height: 5.938rem;
-}
 .home {
   width: 3.688rem;
   height: 1rem;
   margin: 1.125rem 2.563rem 0.688rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -55,12 +54,12 @@ nav {
   color: #121212;
 }
 
-.categories{
+.categories {
   width: 6.563rem;
   height: 1rem;
   margin: 1.125rem 41.5rem 0.688rem 2.563rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -102,9 +101,10 @@ a:active {
   padding-right: 35px;
 }
 
- .book  {
+.book {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
+
   /* display: flex;
   justify-content: space-between; */
   gap: 5px;
@@ -114,7 +114,7 @@ a:active {
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-background: #ffffff;
+  background: #fff;
 }
 
 .details {
@@ -168,13 +168,6 @@ span {
   border: 1px solid var(--border-color);
 }
 
-.user {
-  border: 1px solid var(--blue);
-  padding: 10px;
-  border-radius: 50%;
-}
-
-
 .completed {
   color: var(--dark-gray);
   font-weight: 300;
@@ -183,16 +176,10 @@ span {
 .chapter-details {
   flex-direction: column;
   border-left: 2px solid var(--gray);
-  /* padding-inline: 20px; */
   padding-left: 46px;
   font-family: 'Roboto Slab', serif;
   align-items: flex-start;
 }
-
-/* .chapter-details > * {
-  margin-block: 5px;
-  text-align: left;
-} */
 
 .progress-btn {
   background-color: var(--blue);
@@ -206,12 +193,13 @@ span {
 }
 
 .navbar {
-   width: 87.5rem;
+  width: 87.5rem;
   height: 5.938rem;
   margin: 0 0 2.375rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: var(--white-two);
 }
+
 .navbar ul {
   display: flex;
   flex-direction: row;
@@ -273,10 +261,10 @@ span {
 }
 
 .btn-single {
-  border:none;
+  border: none;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   cursor: pointer;
@@ -288,7 +276,7 @@ span {
   width: 10.875rem;
   height: 1.5rem;
   margin: 1.813rem 32.75rem 1.188rem 0;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   font-stretch: normal;
@@ -297,6 +285,7 @@ span {
   letter-spacing: -0.18px;
   color: #888;
 }
+
 button {
   margin-left: 5px;
 }
